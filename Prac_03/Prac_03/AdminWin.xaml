@@ -1,0 +1,161 @@
+﻿<Window x:Class="Prac_03.AdminWin"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Prac_03"
+        mc:Ignorable="d"
+        Title="AdminWin" Height="600" Width="1000">
+    <Window.Background>
+        <ImageBrush ImageSource="2aef15f5a5838c9fd3e3dd183b499f82.jpg"/>
+    </Window.Background>
+    <Grid Background="{x:Null}">
+        <Grid x:Name="grid" HorizontalAlignment="Left" Height="570" Margin="0,10,-0.4,-9.6" VerticalAlignment="Top" Width="994">
+            <Grid.Background>
+                <ImageBrush ImageSource="2aef15f5a5838c9fd3e3dd183b499f82.jpg"/>
+            </Grid.Background>
+            <Button x:Name="enterLogin" Content="Log in" HorizontalAlignment="Left" Height="28" Margin="10,94,0,0" VerticalAlignment="Top" Width="202" FontSize="18" BorderBrush="{x:Null}" Click="enterLogin_Click">
+                <Button.Background>
+                    <SolidColorBrush Color="White" Opacity="0.4"/>
+                </Button.Background>
+                <Button.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="CornerRadius" Value="6"/>
+                    </Style>
+                </Button.Resources>
+            </Button>
+            <Label Content="Enter password:" HorizontalAlignment="Left" Height="37" Margin="10,13,0,0" VerticalAlignment="Top" Width="202" FontSize="20" FontFamily="Cooper Black" Foreground="White"/>
+            <Button x:Name="logout" Content="Log out" HorizontalAlignment="Left" Height="28" Margin="10,132,0,0" VerticalAlignment="Top" Width="202" FontSize="18" BorderBrush="{x:Null}" IsEnabled="False" Click="logout_Click">
+                <Button.Background>
+                    <SolidColorBrush Color="White" Opacity="0.4"/>
+                </Button.Background>
+                <Button.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="CornerRadius" Value="6"/>
+                    </Style>
+                </Button.Resources>
+            </Button>
+            <Button x:Name="exit" Content="Exit" HorizontalAlignment="Left" Height="45" Margin="10,506,0,0" VerticalAlignment="Top" Width="352" FontSize="18" BorderBrush="{x:Null}" Click="exit_Click">
+                <Button.Background>
+                    <SolidColorBrush Color="White" Opacity="0.4"/>
+                </Button.Background>
+                <Button.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="CornerRadius" Value="6"/>
+                    </Style>
+                </Button.Resources>
+            </Button>
+            <Label Content="Add user" HorizontalAlignment="Left" Height="46" Margin="581,15,0,0" VerticalAlignment="Top" Width="275" HorizontalContentAlignment="Center" FontSize="28" Foreground="Red"/>
+            <Button x:Name="addUser" Content="Add " HorizontalAlignment="Left" Height="37" Margin="504,219,0,0" VerticalAlignment="Top" Width="391" FontSize="24" Click="addUser_Click" IsEnabled="False">
+                <Button.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="CornerRadius" Value="6"/>
+                    </Style>
+                </Button.Resources>
+            </Button>
+            <Label Content="Login:" HorizontalAlignment="Left" Height="46" Margin="567,119,0,0" VerticalAlignment="Top" Width="117" HorizontalContentAlignment="Right" VerticalContentAlignment="Center" Foreground="White" UseLayoutRounding="True" FontFamily="Malgun Gothic" FontSize="26"/>
+            <Label Content="Password:" HorizontalAlignment="Left" Height="46" Margin="504,173,0,0" VerticalAlignment="Top" Width="180" HorizontalContentAlignment="Right" VerticalContentAlignment="Center" Foreground="White" UseLayoutRounding="True" FontFamily="Malgun Gothic" FontSize="26"/>
+            <Label Content="Modify user" HorizontalAlignment="Left" Height="54" Margin="557,263,0,0" VerticalAlignment="Top" Width="307" HorizontalContentAlignment="Center" Foreground="#FFEDD82D" FontSize="28" Background="{x:Null}"/>
+            <Label Content="Full name:" HorizontalAlignment="Left" Height="47" Margin="494,65,0,0" VerticalAlignment="Top" Width="190" HorizontalContentAlignment="Right" VerticalContentAlignment="Center" Foreground="White" UseLayoutRounding="True" FontFamily="Malgun Gothic" FontSize="26"/>
+            <ComboBox x:Name="userCombo" HorizontalAlignment="Left" Height="35" Margin="643,317,0,0" VerticalAlignment="Top" Width="254" FontSize="18" IsEnabled="False" SelectionChanged="userCombo_SelectionChanged" VerticalContentAlignment="Center"/>
+            <Label Content="User:" HorizontalAlignment="Left" Height="46" Margin="539,311,0,0" VerticalAlignment="Top" Width="104" HorizontalContentAlignment="Right" VerticalContentAlignment="Center" Foreground="White" UseLayoutRounding="True" FontFamily="Malgun Gothic" FontSize="26"/>
+            <CheckBox x:Name="activeUser" Content="CheckBox" HorizontalAlignment="Left" Height="20" Margin="536,510,0,0" VerticalAlignment="Top" Width="14"/>
+            <Label Content="Active" HorizontalAlignment="Left" Height="47" Margin="555,489,0,0" VerticalAlignment="Top" Width="80" HorizontalContentAlignment="Right" VerticalContentAlignment="Center" Foreground="White" UseLayoutRounding="True" FontFamily="Malgun Gothic" FontSize="26"/>
+            <Label Content="Login:" HorizontalAlignment="Left" Height="53" Margin="519,396,0,0" VerticalAlignment="Top" Width="124" HorizontalContentAlignment="Right" VerticalContentAlignment="Center" Foreground="White" UseLayoutRounding="True" FontFamily="Malgun Gothic" FontSize="26"/>
+
+            <Label Content="Password:" HorizontalAlignment="Left" Height="52" Margin="504,444,0,0" VerticalAlignment="Top" Width="139" HorizontalContentAlignment="Right" VerticalContentAlignment="Center" Foreground="White" UseLayoutRounding="True" FontFamily="Malgun Gothic" FontSize="26"/>
+            <Label Content="Full name:" HorizontalAlignment="Left" Height="51" Margin="446,352,0,0" VerticalAlignment="Top" Width="197" HorizontalContentAlignment="Right" VerticalContentAlignment="Center" Foreground="White" UseLayoutRounding="True" FontFamily="Malgun Gothic" FontSize="26"/>
+            <Button x:Name="modifyUser" Content="Modify" HorizontalAlignment="Left" Height="41" Margin="777,495,0,0" VerticalAlignment="Top" Width="120" FontSize="22" Foreground="#FF11B719" Background="White" IsEnabled="False" Click="modifyUser_Click">
+                <Button.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="CornerRadius" Value="6"/>
+                    </Style>
+                </Button.Resources>
+            </Button>
+            <TextBox x:Name="modifyFullName" HorizontalAlignment="Left" Height="39" Margin="643,357,0,0" VerticalAlignment="Top" Width="254" FontSize="24" VerticalContentAlignment="Center" IsEnabled="False">
+                <TextBox.Background>
+                    <SolidColorBrush Color="White" Opacity="0.35"/>
+                </TextBox.Background>
+            </TextBox>
+            <TextBox x:Name="modifyLogin" HorizontalAlignment="Left" Height="43" Margin="643,402,0,0" VerticalAlignment="Top" Width="254" FontSize="24" VerticalContentAlignment="Center" IsEnabled="False">
+                <TextBox.Background>
+                    <SolidColorBrush Color="White" Opacity="0.35"/>
+                </TextBox.Background>
+            </TextBox>
+            <TextBox x:Name="addFullName" HorizontalAlignment="Left" Height="35" Margin="684,69,0,0" VerticalAlignment="Top" Width="211" FontSize="24" VerticalContentAlignment="Center" IsEnabled="False">
+                <TextBox.Background>
+                    <SolidColorBrush Color="White" Opacity="0.35"/>
+                </TextBox.Background>
+            </TextBox>
+            <TextBox x:Name="addLogin" HorizontalAlignment="Left" Height="35" Margin="684,125,0,0" VerticalAlignment="Top" Width="211" FontSize="24" VerticalContentAlignment="Center" IsEnabled="False">
+                <TextBox.Background>
+                    <SolidColorBrush Color="White" Opacity="0.35"/>
+                </TextBox.Background>
+            </TextBox>
+            <TextBox HorizontalAlignment="Left" Height="54" Margin="300,65,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="171" Background="{x:Null}" Visibility="Collapsed"/>
+            <TextBox x:Name="add_pass" HorizontalAlignment="Left" Height="35" Margin="684,179,0,0" VerticalAlignment="Top" Width="211" FontSize="24" VerticalContentAlignment="Center" FontFamily="/Prac_03;component/#Password" IsEnabled="False">
+                <TextBox.Background>
+                    <SolidColorBrush Color="White" Opacity="0.35"/>
+                </TextBox.Background>
+            </TextBox>
+            <TextBox x:Name="modify_pass" HorizontalAlignment="Left" Height="39" Margin="643,451,0,0" VerticalAlignment="Top" Width="254" FontSize="24" VerticalContentAlignment="Center" FontFamily="/Prac_03;component/#Password" IsEnabled="False">
+                <TextBox.Background>
+                    <SolidColorBrush Color="White" Opacity="0.35"/>
+                </TextBox.Background>
+            </TextBox>
+            <DataGrid x:Name="mainTable" HorizontalAlignment="Left" Height="302" Margin="10,176,0,0" VerticalAlignment="Top" Width="352" IsEnabled="False">
+                <DataGrid.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="CornerRadius" Value="15"/>
+                    </Style>
+                </DataGrid.Resources>
+                <DataGrid.Background>
+                    <SolidColorBrush Color="#FFF0F0F0" Opacity="0.61"/>
+                </DataGrid.Background>
+            </DataGrid>
+            <TextBox x:Name="login" HorizontalAlignment="Left" Height="36" Margin="10,50,0,0" VerticalAlignment="Top" Width="202" FontSize="20" FontFamily="/Prac_03;component/#Password" VerticalContentAlignment="Center">
+                <TextBox.Background>
+                    <SolidColorBrush Color="White" Opacity="0.35"/>
+                </TextBox.Background>
+            </TextBox>
+            <Button x:Name="enterPass" Content="" HorizontalAlignment="Left" Height="16" Margin="190,59,0,0" VerticalAlignment="Top" Width="17" Opacity="0.496" Click="showPass" Panel.ZIndex="10">
+                <Button.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="CornerRadius" Value="3"/>
+                    </Style>
+                </Button.Resources>
+                <Button.Background>
+                    <ImageBrush ImageSource="showPass.png"/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="modifyRemove" Content="Remove" HorizontalAlignment="Left" Height="41" Margin="643,495,0,0" VerticalAlignment="Top" Width="127" FontSize="22" Foreground="Red" IsEnabled="False" Click="modifyRemove_Click">
+                <Button.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="CornerRadius" Value="6"/>
+                    </Style>
+                </Button.Resources>
+            </Button>
+            <Button x:Name="modUser_password" Content="" HorizontalAlignment="Left" Height="17" Margin="877,461,0,0" VerticalAlignment="Top" Width="17" Opacity="0.496" Click="showPass" Panel.ZIndex="10" IsEnabled="False">
+                <Button.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="CornerRadius" Value="3"/>
+                    </Style>
+                </Button.Resources>
+                <Button.Background>
+                    <ImageBrush ImageSource="showPass.png"/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="addUser_password" Content="" HorizontalAlignment="Left" Height="17" Margin="874,188,0,0" VerticalAlignment="Top" Width="17" Opacity="0.496" Click="showPass" Panel.ZIndex="10" IsEnabled="False">
+                <Button.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="CornerRadius" Value="3"/>
+                    </Style>
+                </Button.Resources>
+                <Button.Background>
+                    <ImageBrush ImageSource="showPass.png"/>
+                </Button.Background>
+            </Button>
+        </Grid>
+
+    </Grid>
+</Window>
