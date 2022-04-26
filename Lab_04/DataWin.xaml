@@ -1,0 +1,51 @@
+﻿<Window x:Class="Lab_04.DataWin" WindowStartupLocation="CenterScreen"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Lab_04"
+        mc:Ignorable="d"
+        Title="DataWin" Height="450" Width="800" Closing="Window_Closing">
+    <Grid>
+        <Grid x:Name="genInfo" HorizontalAlignment="Left" Height="420" Margin="-1,0,-0.4,0" VerticalAlignment="Top" Width="795" Visibility="Collapsed">
+            <Grid.Background>
+                <ImageBrush ImageSource="cool-background (3).png"/>
+            </Grid.Background>
+            <DataGrid x:Name="genInfoData" HorizontalAlignment="Center" Height="383" Margin="77,10,67,27" VerticalAlignment="Center" Width="580" Background="White" BorderBrush="White" VerticalContentAlignment="Center" RenderTransformOrigin="0.5,0.5">
+                <DataGrid.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="0.115"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </DataGrid.RenderTransform>
+            </DataGrid>
+        </Grid>
+        <Grid x:Name="testInfo" HorizontalAlignment="Left" Height="420" Margin="-1,0,-0.4,0" VerticalAlignment="Top" Width="795" Visibility="Visible">
+            <Grid.Background>
+                <ImageBrush ImageSource="cool-background (3).png"/>
+            </Grid.Background>
+            <DataGrid x:Name="testInfoData" HorizontalAlignment="Left" Height="369" Margin="10,25,0,0" VerticalAlignment="Top" Width="386"/>
+            <DataGrid x:Name="subjects" HorizontalAlignment="Left" Height="256" Margin="401,25,0,0" VerticalAlignment="Top" Width="365"/>
+        </Grid>
+        <Grid x:Name="olimpiadPrivelegeInfo" HorizontalAlignment="Left" Height="420" Margin="-1,0,-0.4,0" VerticalAlignment="Top" Width="795" Visibility="Collapsed">
+            <DataGrid x:Name="appPrivilege_Copy" HorizontalAlignment="Left" Height="184" Margin="10,211,0,0" VerticalAlignment="Top" Width="351"/>
+            <DataGrid x:Name="appOlimpiad" HorizontalAlignment="Left" Height="184" Margin="10,10,0,0" VerticalAlignment="Top" Width="351"/>
+            <DataGrid x:Name="olimpiad" HorizontalAlignment="Left" Height="144" Margin="391,10,0,0" VerticalAlignment="Top" Width="377"/>
+            <DataGrid x:Name="privilege" HorizontalAlignment="Left" Height="236" Margin="391,159,0,0" VerticalAlignment="Top" Width="377"/>
+            <DataGrid x:Name="appPrivilege" HorizontalAlignment="Left" Height="184" Margin="10,211,0,0" VerticalAlignment="Top" Width="351"/>
+            <Grid.Background>
+            <ImageBrush ImageSource="cool-background (3).png"/>
+        </Grid.Background>
+        
+        </Grid>
+        <Grid x:Name="educInfo" HorizontalAlignment="Left" Height="420" Margin="-1,0,-0.4,0" VerticalAlignment="Top" Width="795" Visibility="Collapsed">
+            <Grid.Background>
+                <ImageBrush ImageSource="cool-background (3).png"/>
+            </Grid.Background>
+            <DataGrid x:Name="educData" HorizontalAlignment="Left" Height="300" Margin="259,55,0,0" VerticalAlignment="Top" Width="280"/>
+        </Grid>
+
+    </Grid>
+</Window>

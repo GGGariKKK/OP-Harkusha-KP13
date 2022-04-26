@@ -1,0 +1,17 @@
+C:\Users\User\source\repos\Lab_04\bin\Debug\Lab_04.exe.config
+C:\Users\User\source\repos\Lab_04\bin\Debug\Lab_04.exe
+C:\Users\User\source\repos\Lab_04\bin\Debug\Lab_04.pdb
+C:\Users\User\source\repos\Lab_04\obj\Debug\Lab_04.csproj.AssemblyReference.cache
+C:\Users\User\source\repos\Lab_04\obj\Debug\DataWin.g.cs
+C:\Users\User\source\repos\Lab_04\obj\Debug\MainWindow.g.cs
+C:\Users\User\source\repos\Lab_04\obj\Debug\App.g.cs
+C:\Users\User\source\repos\Lab_04\obj\Debug\Lab_04_MarkupCompile.cache
+C:\Users\User\source\repos\Lab_04\obj\Debug\Lab_04_MarkupCompile.lref
+C:\Users\User\source\repos\Lab_04\obj\Debug\DataWin.baml
+C:\Users\User\source\repos\Lab_04\obj\Debug\MainWindow.baml
+C:\Users\User\source\repos\Lab_04\obj\Debug\Lab_04.g.resources
+C:\Users\User\source\repos\Lab_04\obj\Debug\Lab_04.Properties.Resources.resources
+C:\Users\User\source\repos\Lab_04\obj\Debug\Lab_04.csproj.GenerateResource.cache
+C:\Users\User\source\repos\Lab_04\obj\Debug\Lab_04.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\Lab_04\obj\Debug\Lab_04.exe
+C:\Users\User\source\repos\Lab_04\obj\Debug\Lab_04.pdb
