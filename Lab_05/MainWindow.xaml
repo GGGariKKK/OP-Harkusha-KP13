@@ -1,0 +1,43 @@
+﻿<Window x:Class="Lab_04.MainWindow" WindowStartupLocation="CenterScreen"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Lab_04"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" ResizeMode="NoResize">
+    <Grid>
+        <Grid x:Name="mainGrid" HorizontalAlignment="Left" Height="420" Margin="1,0,-0.4,0" VerticalAlignment="Top" Width="793">
+            <Grid.Background>
+                <ImageBrush ImageSource="C:\Users\User\Desktop\Main\Uni\1 курс\2 семестр\ОП\Lab_05\Lab_04\Pictures\cool-background.png"/>
+            </Grid.Background>
+            <Button x:Name="genInfo" Content="General applicants information" HorizontalAlignment="Left" Height="44" Margin="241,114,0,0" VerticalAlignment="Top" Width="337" BorderBrush="{x:Null}" FontSize="20" Foreground="#FFE8E8E8">
+                <Button.Background>
+                    <SolidColorBrush Color="#FF5A4EC3" Opacity="0.7"/>
+                </Button.Background>
+            </Button>
+            <Label Content="Choose section:" HorizontalAlignment="Left" Height="54" Margin="273,25,0,0" VerticalAlignment="Top" Width="272" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="36" Foreground="#FF0056FF"/>
+            <Button x:Name="testInfo" Content="Applicants and tests" HorizontalAlignment="Left" Height="44" Margin="241,163,0,0" VerticalAlignment="Top" Width="337" BorderBrush="{x:Null}" FontSize="20" Foreground="#FFE8E8E8">
+                <Button.Background>
+                    <SolidColorBrush Color="#FF5A4EC3" Opacity="0.7"/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="olimpPrivInfo" Content="Applicants, olimpiads and privileges" HorizontalAlignment="Left" Height="44" Margin="241,212,0,0" VerticalAlignment="Top" Width="337" BorderBrush="{x:Null}" FontSize="20" Foreground="#FFE8E8E8">
+                <Button.Background>
+                    <SolidColorBrush Color="#FF5A4EC3" Opacity="0.7"/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="educInfo" Content="Educational institutions" HorizontalAlignment="Left" Height="44" Margin="241,261,0,0" VerticalAlignment="Top" Width="337" BorderBrush="{x:Null}" FontSize="20" Foreground="#FFE8E8E8">
+                <Button.Background>
+                    <SolidColorBrush Color="#FF5A4EC3" Opacity="0.7"/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="streetInfo" Content="Streets" HorizontalAlignment="Left" Height="44" Margin="241,310,0,0" VerticalAlignment="Top" Width="337" BorderBrush="{x:Null}" FontSize="20" Foreground="#FFE8E8E8">
+                <Button.Background>
+                    <SolidColorBrush Color="#FF5A4EC3" Opacity="0.7"/>
+                </Button.Background>
+            </Button>
+        </Grid>
+
+    </Grid>
+</Window>
